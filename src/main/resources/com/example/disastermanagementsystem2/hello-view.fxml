@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.disastermanagementsystem2.HelloController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#HomeButtonClicked" prefHeight="99.0" prefWidth="220.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 2 2 0;" text="HOME" textAlignment="CENTER">
+               <font>
+                  <Font name="Mallanna" size="40.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="121.0" prefWidth="210.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 2 2 0;" text="DEPLOY">
+               <font>
+                  <Font name="Mallanna" size="40.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="121.0" prefWidth="190.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 2 2 0;" text="EDIT">
+               <font>
+                  <Font name="Mallanna" size="40.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LogInButtonClicked" prefHeight="124.0" prefWidth="218.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 0 2 0;" text="LOGIN">
+               <font>
+                  <Font name="Mallanna" size="40.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0"  BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="368.0" prefWidth="809.0"  text="Disaster Management System">
+               <font>
+                  <Font name="Mandali" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

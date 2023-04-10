@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.disastermanagementsystem2.HelloController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#HomeButtonClicked" prefHeight="123.0" prefWidth="217.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 2 2 0;" text="HOME">
+               <font>
+                  <Font name="Mallanna" size="40.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="122.0" prefWidth="220.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 2 2 0;" text="DEPLOY">
+               <font>
+                  <Font name="Mallanna" size="40.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="109.0" prefWidth="226.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 2 2 0;" text="EDIT">
+               <font>
+                  <Font name="Mallanna" size="39.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LogInButtonClicked" prefHeight="130.0" prefWidth="220.0" style="-fx-background-color: #E0FFFF; -fx-border-color: grey; -fx-border-width: 0 2 2 0;" text="LOGIN">
+               <font>
+                  <Font name="Mallanna" size="40.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="620.0" prefWidth="874.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="215.0" prefWidth="879.0" style="-fx-background-color: F0FFFF;" text="LOGIN">
+               <font>
+                  <Font name="Manjari Thin" size="60.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="56.0" prefWidth="181.0" text="USERNAME: ">
+                     <font>
+                        <Font name="Manjari Thin" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" prefHeight="56.0" prefWidth="385.0" promptText="Farhan">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="183.0" text="PASSWORD: ">
+                     <font>
+                        <Font name="Manjari Thin" size="30.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password" prefHeight="57.0" prefWidth="391.0" promptText="Password">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="141.0" prefWidth="874.0">
+               <children>
+                  <Button fx:id="logIn" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#enteredLogIn" text="ENTER" textAlignment="CENTER">
+                     <font>
+                        <Font name="Manjari Thin" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
