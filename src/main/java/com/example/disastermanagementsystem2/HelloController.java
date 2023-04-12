@@ -51,6 +51,4 @@ public class HelloController {
         System.out.println("Username is: " + takenUsername);
         System.out.println("Password is: " + takenPassword);
     }
-
-
 }
